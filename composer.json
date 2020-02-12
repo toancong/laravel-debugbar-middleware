@@ -1,0 +1,29 @@
+{
+    "name": "beanbean/laravel-debugbar-middleware",
+    "description": "A simple laravel middleware for toggle debugbar",
+    "keywords": ["laravel", "debugbar", "profiler", "debug", "webprofiler", "middleware"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toan Pham",
+            "email": "toancong1920@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "barryvdh/laravel-debugbar": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bean\\LaravelDebugbarMiddleware\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bean\\LaravelDebugbarMiddleware\\ServiceProvider"
+            ]
+        }
+    }
+}
